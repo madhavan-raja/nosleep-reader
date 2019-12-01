@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Reddit Reader for r/nosleep</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css" />
+        <link rel="icon" href="static/favicon.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <div class='title'>
+            <h1>Reddit Reader for r/nosleep</h1>
+        </div>
+
+        <div class='content'>
+            <div class='title'>
+                <h1>{{ title }}</h1>
+                <p><a href="{{ url }}" target="_blank">🔗</a> By u/{{ author }} [{{ upvote_ratio }}% upvoted]</p>
+            </div>
+
+            <div class='body'>
+                {% autoescape false %}
+                    {{ body }}
+                {% endautoescape %}
+            </div>
+        </div>
+    </body>
+</html>

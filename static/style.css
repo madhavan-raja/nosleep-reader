@@ -1,0 +1,29 @@
+body
+{
+    background-color: black;
+    font-family: 'Inconsolata', 'Source Code Pro', 'Courier New';
+    padding: 80px;
+    color: blanchedalmond;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.content
+{
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.body
+{
+    padding-top: 20px;
+    font-size: larger;
+}
+
+a
+{
+    text-decoration: none;
+}
